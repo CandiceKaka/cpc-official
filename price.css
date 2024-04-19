@@ -1,0 +1,118 @@
+.module-divider-common {
+  background-color: transparent;
+}
+.price-kind-wrap {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.price-kind-wrap-title {
+  color: #383838;
+  font-size: 32px;
+  margin-bottom: 68px;
+
+}
+.price-kind-title {
+  padding: 0 16px;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+}
+.price-kind-title::after {
+  content: '';
+  width: 2px;
+  height: 20px;
+  background-color: #b1b1b1;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin-top: -5px;
+}
+
+.price-kind-wrap-title-active{
+  font-weight: bold;
+}
+.price-kind-wrap-title-active::before {
+  position: absolute;
+  content: '';
+  width: 58px;
+  height: 4px;
+  background-color: #009FE8;
+  bottom: -8px;
+  left: 50%;
+  margin-left: -26px;
+}
+
+.price-con-wrap {
+  background: linear-gradient( 180deg, #E8E3F7 0%, #F4F5F6 50%);
+}
+.price-item {
+  width: 270px;
+  height: 412px;
+  background-color: white;
+  text-align: center;
+  display: inline-block;
+  margin-right: 35px;
+  border-radius: 13px;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  -ms-border-radius: 13px;
+  -o-border-radius: 13px;
+  margin-bottom: 40px;
+  position: relative;
+  cursor: pointer;
+}
+.price-item:nth-child(4n) {
+  margin-right: 0px;
+}
+.price-hour {
+  position: absolute;
+  left: 0;
+  top: -15px;
+  display: inline-block;
+  width: 90px;
+  height: 34px;
+  line-height: 34px;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  background-color: #fb651d;
+  border-radius: 2px 2px 16px 2px;
+  -webkit-border-radius: 2px 2px 16px 2px;
+  -moz-border-radius: 2px 2px 16px 2px;
+  -ms-border-radius: 2px 2px 16px 2px;
+  -o-border-radius: 2px 2px 16px 2px;
+}
+.price-text {
+  color: #292929;
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-family: 'PingFang SC-Medium';
+
+}
+.price-line {
+  margin-top: -14px;
+}
+.price-title {
+  padding-top: 24px;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+.price-crown-wrap {
+  width: 141px;
+  height: 141px;
+  margin: 0 auto;
+}
+.money-count {
+  color: #fb5b0e;
+  font-size: 40px;
+  margin-right: 6px;
+}
+.origin-price {
+  color: #ccc;
+  font-size: 16px;
+  text-decoration: line-through;
+  margin-bottom: 16px;
+  margin-top: -6px;
+}

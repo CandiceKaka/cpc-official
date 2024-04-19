@@ -1,0 +1,202 @@
+
+
+/* 第一屏banner开始 */
+.banner-wrap {
+  height: 1000px;
+  background-image: url('./images/banner-bg1.png');
+}
+.banner-content {
+  width: 1239px;
+  height: 1000px;
+  margin: 0 auto;
+}
+.banner-left {
+  width: 528px;
+  float: left;
+  margin-top: 344px;
+
+}
+.common-left-title {
+  font-weight: bold;
+  font-family: 'PingFang SC-Bold';
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+.common-line2 {
+  margin-bottom: 28px;
+}
+.common-line2-price {
+  width: 120px;
+  height: 35px;
+  text-align: center;
+  display: inline-block;
+  margin-right: 16px;
+  line-height: 35px;
+  font-size: 20px;
+  color: #fff;
+  background-image: url('./images/banner-price-bg.png');
+}
+.common-line2-game {
+  vertical-align: top;
+  color: #707070;
+  font-size: 24px;
+  font-family: 'PingFang SC-Bold';
+}
+.banner-line3 {
+  color: #fff;
+  font-size: 24px;
+}
+.banner-pc-download {
+  width: 287px;
+  height: 168px;
+  text-align: center;
+  display: inline-block;
+  margin-right: 8px;
+  vertical-align: top;
+  
+}
+.download-windows {
+  height: 80px;
+  line-height: 80px;
+  margin-bottom: 8px;
+  background-color: #373737;
+
+}
+.download-mac {
+  height: 80px;
+  line-height: 80px;
+  background-color: #373737;
+}
+.banner-mobile-download {
+  padding-top: 16px;
+  display: inline-block;
+  width: 168px;
+  height: 168px;
+  background: #373737;
+  text-align: center;
+}
+.banner-mobile-download img {
+  width: 96px;
+  height: 96px;
+}
+
+
+.banner-right {
+  float: right;
+  margin-top: 275px;
+  width:711px;
+  height: 448px;
+  background-image: url('./images/banner-bg2.png');
+}
+
+/* 第一屏banner结束 */
+
+/* 查看更多游戏开始 */
+.more-game-wrap {
+  height:  680px;
+  background-color: #EBECED;;
+}
+.more-game-content {
+  width: 1200px;
+  height: 680px;
+  margin: 0 auto;
+}
+.more-game-left {
+  margin-top: 228px;
+  width: 484px;
+  float: left;
+}
+.more-game-right {
+   width: 656px;
+   height: 680px;
+   float: right;
+   background-color:aliceblue;
+   overflow: hidden;
+
+}
+.more-game-content {
+  height: 200%;
+}
+
+.see-more-game-btn {
+  width: 272px;
+  height: 66px;
+  line-height: 66px;
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+  background-color: #373737;
+  /* margin-top: 34px; */
+}
+
+/* 查看更多游戏结束 */
+
+/* 首页价格开始 */
+.price-preview {
+  height: 461px;
+  background: url('./images/price-bg.png') no-repeat 100% 100%;
+}
+.price-preview-content {
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 80px;
+}
+.price-preview-item {
+  display: inline-block;
+  width: 270px;
+  height: 308px;
+  text-align: center;
+  padding-top: 24px;
+  background-color: #fff;
+  border-radius: 14px;
+  -webkit-border-radius: 14px;
+  -moz-border-radius: 14px;
+  -ms-border-radius: 14px;
+  -o-border-radius: 14px;
+  position: relative;
+  margin-right: 30px;
+}
+.price-preview-item:last-child {
+  margin-right: 0px;
+}
+.price-kind {
+  font-size: 24px;
+  color: #292929;
+  font-family: 'PingFang SC-Bold';
+  font-weight: bold;
+}
+.price-img {
+  width: 141px;
+  height: 141px;
+  margin: 0 auto;
+
+}
+.price-count {
+  font-size: 32px;
+  color: #FB5B0E;
+  font-family: 'PingFang SC-Bold';
+  font-weight: bold;
+  padding-top: 10px;
+}
+.price-buy {
+  position: absolute;
+  width: 136px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
+  background-color: #000;
+  border-radius: 27px;
+  -webkit-border-radius: 27px;
+  -moz-border-radius: 27px;
+  -ms-border-radius: 27px;
+  -o-border-radius: 27px;
+  bottom: -25px;
+  left: 67px;
+  cursor: pointer;
+  user-select: none;
+}
+/* 首页价格結束 */
+
+
