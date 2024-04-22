@@ -1,9 +1,10 @@
 
 
+/*************** pc端开始 *********************** */
 /* 第一屏banner开始 */
 .banner-wrap {
   height: 1000px;
-  background-image: url('./images/banner-bg1.png');
+  background: url('./images/banner-bg1.png') ;
 }
 .banner-content {
   width: 1239px;
@@ -60,7 +61,6 @@
   line-height: 80px;
   margin-bottom: 8px;
   background-color: #373737;
-
 }
 .download-mac {
   height: 80px;
@@ -90,6 +90,24 @@
 }
 
 /* 第一屏banner结束 */
+
+/* 手机端第一屏banner开始 */
+.mobile-banner-wrap {
+  width: 100%;
+  /* height: 2.81rem; */
+  border: 1px solid red;
+  background: url('./images/banner-bg1.png');
+  background-size: cover;
+  padding-bottom: 0.45rem;
+}
+.mobile-banner-title {
+  font-size: .28rem;
+  text-align: center;
+  padding-top: 0.4rem;
+  line-height: 0.39rem;
+}
+/* 手机端第一屏banner结束 */
+
 
 /* 查看更多游戏开始 */
 .more-game-wrap {
@@ -131,6 +149,28 @@
 
 /* 查看更多游戏结束 */
 
+/* 手机端查看更多游戏结束 */
+.mobile-game-wrap {
+
+}
+.mobile-game-img {
+  background-color: #EBECED;
+  height: 1.82rem;
+  margin-bottom: .15rem;
+}
+.mobile-more-game {
+  width: 1.48rem;
+  height: .36rem;
+  line-height: .36rem;
+  color: #fff;
+  font-size: .14rem;
+  text-align: center;
+  margin: 0 auto;
+  background-color: #373737;
+}
+
+/* 手机端查看更多游戏结束 */
+
 /* 首页价格开始 */
 .price-preview {
   height: 461px;
@@ -165,11 +205,11 @@
   font-family: 'PingFang SC-Bold';
   font-weight: bold;
 }
+
 .price-img {
   width: 141px;
   height: 141px;
   margin: 0 auto;
-
 }
 .price-count {
   font-size: 32px;
@@ -199,4 +239,112 @@
 }
 /* 首页价格結束 */
 
+/* 手机端首页价格开始 */
+.mobile-price-preview {
+  width: 100%;
+  padding: .16rem 0.66rem 0;
+  /* height: 3.22rem; */
+  background: url('./images/price-mobile-bg.png');
+  background-size: cover;
+}
+.mobile-price-preview-item {
+  float: left;
+  font-size: .10rem;
+  font-weight: bold;
+  padding-top: .12rem;
+  padding-bottom: .13rem;
+  width: 47.5%;
+  margin-right: 5%;
+  margin-bottom: .25rem;
+  background-color: #fff;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+}
+.mobile-price-preview-item:nth-child(2n) {
+  margin-right: 0px;
+}
+.mobile-price-kind {
+  margin-bottom: .04rem;
+}
+.mobile-price-count {
+  font-size: .14rem;
+  color: #FB5B0E;
+}
+.mobile-price-buy {
+  position: absolute;
+  width: .56rem;
+  height: .18rem;
+  line-height: .18rem;
+  background-color: #000;
+  color: #fff;
+  bottom: -0.09rem;
+  left: 50%;
+  margin-left: -.26rem;
+  border-radius: .11rem;
+  -webkit-border-radius: .11rem;
+  -moz-border-radius: .11rem;
+  -ms-border-radius: .11rem;
+  -o-border-radius: .11rem;
+}
 
+/* 手机端首页价格結束 */
+
+
+
+/*************** pc端结束 *********************** */
+
+
+
+/*************** 手机移动端开始 *********************** */
+@media screen and (max-width: 769px) {
+  .common-line2 {
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: .18rem;
+  }
+  .common-line2-price {
+    width: 70px;
+    height: 28px;
+    line-height: 0.28rem;
+    font-size: .14rem;
+    margin-right: 8px;
+  }
+  .common-line2-game {
+    font-size: .14rem;
+    vertical-align: middle;
+  }
+  .banner-line3 {
+    text-align: center;
+    font-size: .14rem;
+  }
+  .banner-pc-download {
+    width: 1.62rem;
+    height: 1.08rem;
+    font-size: .14rem;
+  }
+  .download-windows {
+    margin-bottom: 0.04rem;
+  }
+  .download-windows, .download-mac {
+    height: .52rem;
+    line-height: .52rem;
+  }
+  .banner-mobile-download {
+    width: 1.08rem;
+    height: 1.08rem;
+  }
+  .banner-mobile-download img {
+    width: .64rem;
+    height: .64rem;
+  }
+
+
+}
+
+/*************** 手机移动端结束 *********************** */
