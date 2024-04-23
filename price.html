@@ -31,7 +31,7 @@
     </div>
     <div class="mobile-header-right">
       <div class="mobile-header-download">下载客户端</div>
-      <span class="mobile-more-menu">更多</span>
+      <span class="mobile-more-menu-btn" onclick="handleSeeMoreMenu()">更多</span>
     </div>
   </div>
   <!-- 手机端头部导航结束 -->
@@ -377,9 +377,9 @@
     <div class="mobile-footer-item">
       <div class="mobile-footer-title-text">关于我们</div>
       <div>
-        <a href="" class="about-us mobile-footer-con-text">关于我们</a>
-        <a href="" class="about-us mobile-footer-con-text">隐私政策</a>
-        <a href="" class="about-us mobile-footer-con-text">用户协议</a>
+        <a href="https://www.icloud.cn/about.html" class="about-us mobile-footer-con-text">关于我们</a>
+        <a href="https://passport.kedou.com/front/common/policy.htm" class="about-us mobile-footer-con-text">隐私政策</a>
+        <a href="https://passport.kedou.com/front/noLogin/agreeMent.htm" class="about-us mobile-footer-con-text">用户协议</a>
         <a href="" class="about-us mobile-footer-con-text">使用教程</a>
       </div>
     </div>
@@ -387,33 +387,54 @@
   </div>
   <!-- 手机端底部结束 -->
 
+   <!-- 手机端蒙板开始 -->
+  <div class="mobile-more-menu-mask">
+    <div class="mobile-more-menu">
+      <div class="btn-close" onclick="handleDisMoreMenu()">叉叉</div>
+      <div class="mobile-more-nav"><a href="./index.html">首页</a></div>
+      <div class="mobile-more-nav"><a href="./price.html">价格</a></div>
+    </div>
+  </div>
+  <!-- 手机端蒙板结束 -->
+
 </body>
 
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script>
   function toggleActiveClass(event) {
-  // 获取被点击的元素
-  var clickedElement = event.target;
-  // 获取父元素
-  var parentElement = clickedElement.parentNode;
+    // 获取被点击的元素
+    var clickedElement = event.target;
+    // 获取父元素
+    var parentElement = clickedElement.parentNode;
 
-  // 获取所有同级子元素
-  var childElements = parentElement.children;
+    // 获取所有同级子元素
+    var childElements = parentElement.children;
 
-  // 循环遍历所有同级子元素
-  for (var i = 0; i < childElements.length; i++) {
-    var child = childElements[i];
-    // 判断是否为被点击的子元素
-    if (child === clickedElement) {
-      // 如果是被点击的子元素，则添加类名
-      child.classList.add("price-kind-wrap-title-active");
-    } else {
-      // 如果不是被点击的子元素，则移除类名
-      child.classList.remove("price-kind-wrap-title-active");
+    // 循环遍历所有同级子元素
+    for (var i = 0; i < childElements.length; i++) {
+      var child = childElements[i];
+      // 判断是否为被点击的子元素
+      if (child === clickedElement) {
+        // 如果是被点击的子元素，则添加类名
+        child.classList.add("price-kind-wrap-title-active");
+      } else {
+        // 如果不是被点击的子元素，则移除类名
+        child.classList.remove("price-kind-wrap-title-active");
+      }
     }
   }
-}
+   // 点击手机端头部，查看更多菜单按钮
+   function handleSeeMoreMenu () {
+    var ele = document.getElementsByClassName('mobile-more-menu-mask')[0]
+    ele.style.display = 'block'
+  }
+
+  function handleDisMoreMenu () {
+    var ele = document.getElementsByClassName('mobile-more-menu-mask')[0]
+    ele.style.display = 'none'
+  }
 </script>
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
 <script>
   // 初始化Swiper
   var swiper = new Swiper('.swiper-container', {
@@ -434,5 +455,8 @@
    function goToSlide(index) {
       swiper.slideTo(index); // 切换到指定索引的slide
     }
+</script>
+<script>
+ 
 </script>
 </html>

@@ -30,7 +30,7 @@
     </div>
     <div class="mobile-header-right">
       <div class="mobile-header-download">下载客户端</div>
-      <span class="mobile-more-menu">更多</span>
+      <span class="mobile-more-menu-btn" onclick="handleSeeMoreMenu()">更多</span>
     </div>
   </div>
   <!-- 手机端头部导航结束 -->
@@ -336,5 +336,27 @@
     
   </div>
   <!-- 手机端底部结束 -->
+
+  <!-- 手机端蒙板开始 -->
+  <div class="mobile-more-menu-mask">
+    <div class="mobile-more-menu">
+      <div class="btn-close" onclick="handleDisMoreMenu()">叉叉</div>
+      <div class="mobile-more-nav"><a href="./index.html">首页</a></div>
+      <div class="mobile-more-nav"><a href="./price.html">价格</a></div>
+    </div>
+  </div>
+  <!-- 手机端蒙板结束 -->
+  <script>
+    // 点击手机端头部，查看更多菜单按钮
+    function handleSeeMoreMenu () {
+      var ele = document.getElementsByClassName('mobile-more-menu-mask')[0]
+      ele.style.display = 'block'
+    }
+
+    function handleDisMoreMenu () {
+      var ele = document.getElementsByClassName('mobile-more-menu-mask')[0]
+      ele.style.display = 'none'
+    }
+  </script>
 </body>
 </html>
