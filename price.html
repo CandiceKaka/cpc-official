@@ -6,6 +6,7 @@
   <title>价格</title>
   <link rel="stylesheet" href="./common.css" />
   <link rel="stylesheet" href="./price.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 <body>
   <!-- 头部导航开始 -->
@@ -23,14 +24,26 @@
   </div>
  <!-- 头部导航结束 -->
 
+  <!-- 手机端头部导航开始 -->
+  <div class="mobile-header">
+    <div class="mobile-header-left">
+      <img class="" src="./images/header-logo.png"/>
+    </div>
+    <div class="mobile-header-right">
+      <div class="mobile-header-download">下载客户端</div>
+      <span class="mobile-more-menu">更多</span>
+    </div>
+  </div>
+  <!-- 手机端头部导航结束 -->
+
   <div class="price-con-wrap">
-    <div class="module-divider-common">
+    <div class="module-divider-common-price mobile-module-divider-common">
       <span>
         高性价比 + 多种选择
       </span>
     </div> 
 
-    <!-- 价格开始 -->
+    <!-- pc端价格开始 -->
     <div class="price-kind-wrap">
       <div class="price-kind-wrap-title" onclick="toggleActiveClass(event)">
         <span class="price-kind-title price-kind-wrap-title-active">周期卡</span>
@@ -101,13 +114,168 @@
         </div>
       </div>
     </div>
+    <!-- pc端价格结束 -->
    
+    
+    <!-- 移动端价格开始 -->
+    <div class="mobile-price-kind-wrap">
+      <div class="mobile-kind-title-wrap">
+        <span class="mobile-kind-title mobile-kind-title-active" onclick="goToSlide(0)">周期卡</span>
+        <span class="mobile-kind-title" onclick="goToSlide(1)">时长卡</span>
+        <span class="mobile-kind-title" onclick="goToSlide(2)">时段卡</span>
+      </div>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <!-- 周期卡 -->
+          <div class="swiper-slide">
+            <div class="mobile-price-item">
+              <span class="mobile-price-hour">1.2元/时</span>
+              <div class="mobile-price-title mobile-price-text">月卡.每日两小时</div>
+              <img src="./images/crown2-mobile.png"/>
+              <div class="mobile-price-line">
+                <span class="mobile-money-count">¥72</span>/月
+              </div>
+              <div class="mobile-origin-price">90元/月</div>
+              <div class="mobile-price-text">每日两小时</div>
+              <div class="mobile-price-text">多端共享</div>
+              <div class="mobile-price-text">任何时段</div>
+            </div>
+            <div class="mobile-price-item">
+              <span class="mobile-price-hour">1.2元/时</span>
+              <div class="mobile-price-title mobile-price-text">月卡.每日两小时</div>
+              <img src="./images/crown2-mobile.png"/>
+              <div class="mobile-price-line">
+                <span class="mobile-money-count">¥72</span>/月
+              </div>
+              <div class="mobile-origin-price">90元/月</div>
+              <div class="mobile-price-text">每日两小时</div>
+              <div class="mobile-price-text">多端共享</div>
+              <div class="mobile-price-text">任何时段</div>
+            </div>
+            <div class="mobile-price-item">
+              <span class="mobile-price-hour">1.2元/时</span>
+              <div class="mobile-price-title mobile-price-text">月卡.每日两小时</div>
+              <img src="./images/crown2-mobile.png"/>
+              <div class="mobile-price-line">
+                <span class="mobile-money-count">¥72</span>/月
+              </div>
+              <div class="mobile-origin-price">90元/月</div>
+              <div class="mobile-price-text">每日两小时</div>
+              <div class="mobile-price-text">多端共享</div>
+              <div class="mobile-price-text">任何时段</div>
+            </div>
+            <div class="mobile-price-item">
+              <span class="mobile-price-hour">1.2元/时</span>
+              <div class="mobile-price-title mobile-price-text">月卡.每日两小时</div>
+              <img src="./images/crown2-mobile.png"/>
+              <div class="mobile-price-line">
+                <span class="mobile-money-count">¥72</span>/月
+              </div>
+              <div class="mobile-origin-price">90元/月</div>
+              <div class="mobile-price-text">每日两小时</div>
+              <div class="mobile-price-text">多端共享</div>
+              <div class="mobile-price-text">任何时段</div>
+            </div>
+          </div>               
+          <!-- 时长卡 -->
+          <div class="swiper-slide">
+            <div class="mobile-price-item">
+              <span class="mobile-price-hour">1.2元/时</span>
+              <div class="mobile-price-title mobile-price-text">月卡.每日两小时</div>
+              <img src="./images/crown2-mobile.png"/>
+              <div class="mobile-price-line">
+                <span class="mobile-money-count">¥72</span>/月
+              </div>
+              <div class="mobile-origin-price">90元/月</div>
+              <div class="mobile-price-text">每日两小时</div>
+              <div class="mobile-price-text">多端共享</div>
+              <div class="mobile-price-text">任何时段</div>
+            </div>
+            <div class="mobile-price-item">
+              <span class="mobile-price-hour">1.2元/时</span>
+              <div class="mobile-price-title mobile-price-text">月卡.每日两小时</div>
+              <img src="./images/crown2-mobile.png"/>
+              <div class="mobile-price-line">
+                <span class="mobile-money-count">¥72</span>/月
+              </div>
+              <div class="mobile-origin-price">90元/月</div>
+              <div class="mobile-price-text">每日两小时</div>
+              <div class="mobile-price-text">多端共享</div>
+              <div class="mobile-price-text">任何时段</div>
+            </div>
+            <div class="mobile-price-item">
+              <span class="mobile-price-hour">1.2元/时</span>
+              <div class="mobile-price-title mobile-price-text">月卡.每日两小时</div>
+              <img src="./images/crown2-mobile.png"/>
+              <div class="mobile-price-line">
+                <span class="mobile-money-count">¥72</span>/月
+              </div>
+              <div class="mobile-origin-price">90元/月</div>
+              <div class="mobile-price-text">每日两小时</div>
+              <div class="mobile-price-text">多端共享</div>
+              <div class="mobile-price-text">任何时段</div>
+            </div>
+            <div class="mobile-price-item">
+              <span class="mobile-price-hour">1.2元/时</span>
+              <div class="mobile-price-title mobile-price-text">月卡.每日两小时</div>
+              <img src="./images/crown2-mobile.png"/>
+              <div class="mobile-price-line">
+                <span class="mobile-money-count">¥72</span>/月
+              </div>
+              <div class="mobile-origin-price">90元/月</div>
+              <div class="mobile-price-text">每日两小时</div>
+              <div class="mobile-price-text">多端共享</div>
+              <div class="mobile-price-text">任何时段</div>
+            </div>
+          </div>
+          <!-- 时段卡 -->
+          <div class="swiper-slide">
+            <div class="mobile-price-item">
+              <span class="mobile-price-hour">1.2元/时</span>
+              <div class="mobile-price-title mobile-price-text">月卡.每日两小时</div>
+              <img src="./images/crown2-mobile.png"/>
+              <div class="mobile-price-line">
+                <span class="mobile-money-count">¥72</span>/月
+              </div>
+              <div class="mobile-origin-price">90元/月</div>
+              <div class="mobile-price-text">每日两小时</div>
+              <div class="mobile-price-text">多端共享</div>
+              <div class="mobile-price-text">任何时段</div>
+            </div>
+            <div class="mobile-price-item">
+              <span class="mobile-price-hour">1.2元/时</span>
+              <div class="mobile-price-title mobile-price-text">月卡.每日两小时</div>
+              <img src="./images/crown2-mobile.png"/>
+              <div class="mobile-price-line">
+                <span class="mobile-money-count">¥72</span>/月
+              </div>
+              <div class="mobile-origin-price">90元/月</div>
+              <div class="mobile-price-text">每日两小时</div>
+              <div class="mobile-price-text">多端共享</div>
+              <div class="mobile-price-text">任何时段</div>
+            </div>
+            <div class="mobile-price-item">
+              <span class="mobile-price-hour">1.2元/时</span>
+              <div class="mobile-price-title mobile-price-text">月卡.每日两小时</div>
+              <img src="./images/crown2-mobile.png"/>
+              <div class="mobile-price-line">
+                <span class="mobile-money-count">¥72</span>/月
+              </div>
+              <div class="mobile-origin-price">90元/月</div>
+              <div class="mobile-price-text">每日两小时</div>
+              <div class="mobile-price-text">多端共享</div>
+              <div class="mobile-price-text">任何时段</div>
+            </div>
+           
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 移动端价格结束 -->
   </div>
-  <!-- 价格结束 -->
 
-
-   <!-- 页脚底部开始 -->
-   <div class="footer-top">
+  <!-- 页脚底部开始 -->
+  <div class="footer-top">
     <div class="footer-content footer-top-content">
       <div class="footer-item"> 
         <div class="footer-item-title">客戶端下载</div>
@@ -173,6 +341,52 @@
     </div>
   </div>
   <!-- 页脚底部结束 -->
+
+  <!-- 手机端底部开始 -->
+  <div class="mobile-footer-wrap">
+    <div class="mobile-footer-item">
+      <div class="mobile-footer-title-text">客户端下载</div>
+      <div>
+        <span class="client-download"><a herf="" class="mobile-footer-con-text mobile-window">Windows版下载</a></span>
+        <span class="client-download"><a class="mobile-footer-con-text" href="">Android版下载</a></span>
+      </div>
+      <div><a href="" class="mobile-footer-con-text">苹果mac版下载</a></div>
+    </div>
+
+    <div class="mobile-footer-item">
+      <div class="mobile-footer-title-text">官方渠道</div>
+      <div class="footer-code-item">
+        <img src="./images/qrcode-wechat.png"/>
+        <div>微信公众号</div>
+      </div>
+      <div class="footer-code-item">
+        <img src="./images/qrcode-douyin.png"/>
+        <div>抖音官方号</div>
+      </div>
+    </div>
+
+    <div class="mobile-footer-item">
+      <div class="mobile-footer-title-text">友情链接</div>
+      <div>
+        <a href="" class="friend-link mobile-footer-con-text">顺网科技</a>
+        <a href="" class="friend-link mobile-footer-con-text">顺网算力</a>
+        <a href="" class="friend-link mobile-footer-con-text">泡泡加速器</a>
+      </div>
+    </div>
+
+    <div class="mobile-footer-item">
+      <div class="mobile-footer-title-text">关于我们</div>
+      <div>
+        <a href="" class="about-us mobile-footer-con-text">关于我们</a>
+        <a href="" class="about-us mobile-footer-con-text">隐私政策</a>
+        <a href="" class="about-us mobile-footer-con-text">用户协议</a>
+        <a href="" class="about-us mobile-footer-con-text">使用教程</a>
+      </div>
+    </div>
+    
+  </div>
+  <!-- 手机端底部结束 -->
+
 </body>
 
 <script>
@@ -198,5 +412,27 @@
     }
   }
 }
+</script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+  // 初始化Swiper
+  var swiper = new Swiper('.swiper-container', {
+    // 设置为横向滑动
+    direction: 'horizontal',
+    on: {
+      slideChange: function () {
+        var activeIndex = this.activeIndex
+        document.querySelectorAll('.mobile-kind-title').forEach(function (title) {
+          title.classList.remove('mobile-kind-title-active')
+        })
+        document.querySelectorAll('.mobile-kind-title')[activeIndex].classList.add('mobile-kind-title-active')
+      }
+    }
+  });
+
+   // 外部按钮点击事件
+   function goToSlide(index) {
+      swiper.slideTo(index); // 切换到指定索引的slide
+    }
 </script>
 </html>

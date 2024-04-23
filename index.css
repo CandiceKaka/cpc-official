@@ -5,6 +5,7 @@
 .banner-wrap {
   height: 1000px;
   background: url('./images/banner-bg1.png') ;
+  margin-top: 80px;
 }
 .banner-content {
   width: 1239px;
@@ -99,6 +100,7 @@
   background: url('./images/banner-bg1.png');
   background-size: cover;
   padding-bottom: 0.45rem;
+  margin-top: 0.64rem;
 }
 .mobile-banner-title {
   font-size: .28rem;

@@ -114,6 +114,8 @@ th {
   padding-right: 0.24rem;
   vertical-align: middle;
   background-color: #fff;
+  position: fixed;
+  z-index: 2;
 }
 .mobile-header-left {
   float: left;
@@ -157,7 +159,7 @@ th {
 
 
 /* 分割线 */
-module-divider-common, .module-divider-common1, .module-divider-common2 {
+.module-divider-common, .module-divider-common1, .module-divider-common2, .module-divider-common-price {
   text-align: center;
   color: #2c2c2c;
   font-size: 48px;
@@ -296,7 +298,7 @@ module-divider-common, .module-divider-common1, .module-divider-common2 {
   margin-right:1%;
 }
 .footer-code-item img {
-  width: 100%;
+  /* width: 100%; */
 }
 
 /* 手机端底部结束 */
@@ -362,14 +364,12 @@ module-divider-common, .module-divider-common1, .module-divider-common2 {
 
 }
 
+/* 电脑屏幕 */
 @media screen and (min-width : 770px) {
   .mobile-header {
     display: none;
   }
   .mobile-banner-wrap {
-    display: none;
-  }
-  .mobile-module-divider-common {
     display: none;
   }
   .mobile-game-wrap {

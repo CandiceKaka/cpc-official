@@ -46,6 +46,7 @@
 
 .price-con-wrap {
   background: linear-gradient( 180deg, #E8E3F7 0%, #F4F5F6 50%);
+  padding-top: 80px;
 }
 .price-item {
   width: 270px;
@@ -115,4 +116,130 @@
   text-decoration: line-through;
   margin-bottom: 16px;
   margin-top: -6px;
+}
+
+/* 手机端样式 */
+.mobile-kind-title-wrap {
+  color: #383838;
+  font-size: .16rem;
+  margin-bottom: .22rem;
+  padding-left: .24rem;
+}
+.mobile-kind-title {
+  position: relative;
+  padding: 0 .12rem;
+  cursor: pointer;
+  user-select: none;
+}
+.mobile-kind-title:first-child {
+  padding-left: 0;
+}
+.mobile-kind-title-active {
+  font-weight: bold;
+
+}
+.mobile-kind-title-active::before {
+  position: absolute;
+  content: "";
+  width: .32rem;
+  height: .02rem;
+  background-color: #009FE8;
+  left: 50%;
+  margin-left: -.16rem;
+  bottom: -.06rem;
+}
+.mobile-kind-title::after {
+  position: absolute;
+  content: '';
+  width: .01rem;
+  height: .14rem;
+  background-color: #b1b1b1;
+  top: 50%;
+  margin-top: -.07rem;
+  right: 0;
+}
+
+/* 手机端价格 */
+.mobile-price-kind-wrap {
+  /* padding: 0 .24rem; */
+}
+.mobile-price-item {
+  width: 48%;
+  background-color: #fff;
+  padding: .12rem .25rem .21rem;
+  border-radius: 7px;
+  display: inline-block;
+  text-align: center;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  margin-bottom: .2rem;
+  margin-right: 1%;
+  position: relative;
+}
+/* .mobile-price-item:nth-child(4n){
+  margin-right: 0;
+} */
+.mobile-price-hour {
+  position: absolute;
+  padding: 0 .04rem;
+  top: -.08rem;
+  left: 0;
+  /* width: .44rem; */
+  height: .17rem;
+  line-height: .17rem;
+  color: #fff;
+  background-color: #fb651d;
+  border-radius: 1px 1px 9px 1px;
+  -webkit-border-radius: 1px 1px 9px 1px;
+  -moz-border-radius: 1px 1px 9px 1px;
+  -ms-border-radius: 1px 1px 9px 1px;
+  -o-border-radius: 1px 1px 9px 1px;
+}
+.mobile-price-text {
+  color: #292929;
+  font-size: .14rem;
+  margin-bottom: .08rem;
+}
+.mobile-price-title {
+  font-weight: bold;
+}
+.mobile-money-count {
+  color: #fb5b0e;
+  font-weight: bold;
+  font-size: .22rem;
+  margin-right: .06rem;
+}
+.mobile-origin-price {
+  color: #ccc;
+  font-size: .09rem;
+  text-decoration: line-through;
+  margin-bottom: .08rem;
+
+  
+}
+.swiper-slide {
+  padding: 0 .24rem;
+}
+
+
+/* // 手机端 */
+@media screen and (max-width: 769px) {
+  .price-con-wrap {
+    padding-top: .64rem;
+  }
+  .mobile-module-divider-common {
+    background-color: transparent;
+  }
+  .price-kind-wrap {
+    display: none;
+  }
+}
+
+/* 电脑屏幕 */
+@media screen and (min-width : 770px) { 
+ .mobile-price-kind-wrap {
+  display: none;
+ } 
 }
