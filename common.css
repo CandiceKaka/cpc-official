@@ -268,6 +268,18 @@ th {
 .footer-item a, .footer-bottom a {
   color: #8e8e8e;
 }
+.footer-item-text {
+  cursor: pointer;
+}
+.footer-item-text:hover {
+  color: #ffff;
+}
+.footer-item a:hover{
+  color: #fff;
+}
+.footer-bottom a:hover {
+  color: #fff;
+}
 .footer-bottom .a-underline {
   text-decoration: underline;
   margin-right: 10px;
@@ -286,6 +298,9 @@ th {
 }
 .footer-item-line {
   margin-bottom: 24px;
+}
+.footer-item-line .iconfont {
+  margin-right: 6px;
 }
 .footer-item-lineleft {
   margin-right: 48px;

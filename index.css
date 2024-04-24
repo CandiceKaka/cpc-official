@@ -16,7 +16,6 @@
   width: 528px;
   float: left;
   margin-top: 344px;
-
 }
 .common-left-title {
   font-weight: bold;
@@ -150,6 +149,7 @@
   color: #fff;
   text-align: center;
   background-color: #373737;
+  cursor: pointer;
   /* margin-top: 34px; */
 }
 

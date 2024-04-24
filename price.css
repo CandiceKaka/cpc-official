@@ -90,8 +90,17 @@
   font-size: 24px;
   margin-bottom: 10px;
   font-family: 'PingFang SC-Medium';
-
 }
+.price-explain {
+  padding-left: 64px;
+  text-align: left;
+}
+.price-explain .iconfont {
+  color: #47FF64;
+  margin-right: 4px;
+  font-size: 19px;
+}
+
 .price-line {
   margin-top: -14px;
 }
@@ -116,6 +125,10 @@
   text-decoration: line-through;
   margin-bottom: 16px;
   margin-top: -6px;
+}
+
+.module-divider-common-price {
+  background-color: transparent;
 }
 
 /* 手机端样式 */
