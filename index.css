@@ -48,6 +48,10 @@
   color: #fff;
   font-size: 24px;
 }
+.banner-line3 .iconfont {
+  font-size: 24px;
+  margin-right: 8px;
+}
 .banner-pc-download {
   width: 287px;
   height: 168px;
@@ -62,11 +66,13 @@
   line-height: 80px;
   margin-bottom: 8px;
   background-color: #373737;
+  cursor: pointer;
 }
 .download-mac {
   height: 80px;
   line-height: 80px;
   background-color: #373737;
+  cursor: pointer;
 }
 .banner-mobile-download {
   padding-top: 16px;
@@ -332,6 +338,7 @@
     margin-bottom: 0.04rem;
   }
   .download-windows, .download-mac {
+    cursor: pointer;
     height: .52rem;
     line-height: .52rem;
   }

@@ -6,6 +6,7 @@
   <title>首页</title>
   <link rel="stylesheet" href="./common.css" />
   <link rel="stylesheet" href="./index.css" />
+  <link rel="stylesheet" href="./fonts/iconfont.css" />
 </head>
 <body>
   <!-- 头部导航开始 -->
@@ -18,7 +19,9 @@
           <li><a href="./price.html">价格</a></li>
         </ul>
       </div>
-      <span class="header-download">下载客户端</span>
+      <span class="header-download">
+        <i class="iconfont icon-Vector1"></i>下载客户端
+      </span>
      </div>
   </div>
   <!-- 头部导航结束 -->
@@ -46,12 +49,12 @@
         </div>
         <div class="banner-line3">
           <div class="banner-pc-download">
-            <div class="download-windows">Windows版下载</div>
-            <div class="download-mac">苹果mac版下载</div>
+            <div class="download-windows"><i class="iconfont icon-Vector1"></i>Windows版下载</div>
+            <div class="download-mac"><i class="iconfont icon-Frame41"></i>苹果mac版下载</div>
           </div>
           <div class="banner-mobile-download">
             <img src=""/>
-            <div>移动端</div>
+            <div><i class="iconfont icon-Frame61"></i>移动端</div>
           </div>
         </div>
        </div>
@@ -63,7 +66,7 @@
 
    <!-- 手机端第一屏banner开始 -->
    <div class="mobile-banner-wrap">
-    <div class="mobile-banner-title">游戏云电脑，登录即玩！</div>
+    <div class="mobile-banner-title">游戏云电脑，登录即玩！</i></div>
     <div class="common-line2">
       <span class="common-line2-price">低至0.2元</span>
       <span class="common-line2-game">/千款游戏/开机即玩/顺畅不卡顿</span>
@@ -84,13 +87,13 @@
    <!-- 中间分隔开始 -->
   <div class="module-divider-common1">
     <span class="divider-content1">
-      1000+热门游戏，登录即玩 
+      <img src="./images/divier-left.png"/><span class="divider-content-text">1000+热门游戏，登录即玩</span><img src="./images/divider-right.png"/>
     </span>
   </div> 
   <!-- 中间分隔结束 -->
 
    <!-- 手机端中间分隔开始 -->
-  <div class="mobile-module-divider-common">
+  <div class="mobile-module-divider-common mobile-module-divider-common-download">
     <span class="mobile-divider-content1">
       下载客户端，查看更多游戏
     </span>
@@ -127,9 +130,13 @@
   <!-- 手机端查看更多游戏结束 -->
  
   <!-- 分隔开始 -->
+
+
   <div class="module-divider-common2 mobile-module-divider-common">
     <span class="divider-content2">
-      价格实惠，种类多 
+      <img src="./images/divier-left.png"/>
+      <span class="divider-content-text">价格实惠，种类多</span> 
+      <img src="./images/divider-right.png"/>
     </span>
   </div>
   <!-- 分隔结束 -->
@@ -346,6 +353,20 @@
     </div>
   </div>
   <!-- 手机端蒙板结束 -->
+
+  <!-- 侧边栏客服开始 -->
+  <div class="sidebar">
+    <div class="services">
+      <i class="iconfont icon-Frame3"></i>
+      <span class="services-link">在线客服</span>
+    </div>
+    <div class="goto-top" onclick="gotoTop()">
+      <i class="iconfont icon-arrow-left"></i>
+      <div>返回顶部</div>
+    </div>
+  </div>
+  <!-- 侧边栏客服结束 -->
+
   <script>
     // 点击手机端头部，查看更多菜单按钮
     function handleSeeMoreMenu () {
@@ -356,6 +377,11 @@
     function handleDisMoreMenu () {
       var ele = document.getElementsByClassName('mobile-more-menu-mask')[0]
       ele.style.display = 'none'
+    }
+
+    function gotoTop () {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0
     }
   </script>
 </body>

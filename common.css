@@ -102,6 +102,9 @@ th {
   margin-top: 21px;
   cursor: pointer;
 }
+.header-download i {
+  margin-right: 4px;
+}
 .header-download:hover {
   color: #00AFFF;
   border-color: #00AFFF;
@@ -218,6 +221,9 @@ th {
   line-height: 200px;
   background-color: #f4f5f6;
 }
+.divider-content-text {
+  padding: 0 12px;
+}
 .divider-content1 {
   background: url('./images/divider-bg1.png') no-repeat 50% 67%;
   display: inline-block;
@@ -295,6 +301,63 @@ th {
 }
 
 /* 页脚结束 */
+
+
+/* pc端侧边栏联系客服开始 */
+.sidebar {
+  width: 64px;
+  position: fixed;
+  top: 50%;
+  margin-top: -75px;
+  right: 56px;
+}
+.sidebar .services {
+  height: 166px;
+  margin-bottom: 16px;
+  background: linear-gradient( #34B5DD 17%, #0962E7 92%);
+  border-radius: 41px;
+  -webkit-border-radius: 41px;
+  -moz-border-radius: 41px;
+  -ms-border-radius: 41px;
+  -o-border-radius: 41px;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  padding-top: 12px;
+  cursor: pointer;
+  /* padding: 0 24px; */
+}
+.services-link {
+  display: inline-block;
+  padding: 10px 24px;
+}
+.sidebar .services i {
+  font-size: 40px;
+  margin-bottom: 4px;
+}
+.goto-top {
+  width: 64px;
+  height: 89px;
+  /* line-height: 89px; */
+  font-size: 12px;
+  cursor: pointer;
+  text-align: center;
+  background-color: #fff;
+  padding-top: 24px;
+  color: #747474;
+  border-radius: 41px;
+  -webkit-border-radius: 41px;
+  -moz-border-radius: 41px;
+  -ms-border-radius: 41px;
+  -o-border-radius: 41px;
+  user-select: none;
+}
+.goto-top .iconfont {
+  font-size: 20px;
+  margin-bottom: 6px;
+}
+
+/* pc端侧边栏联系客服结束 */
 
 /* 手机端底部开始 */
 .mobile-footer-wrap {
@@ -411,7 +474,6 @@ th {
   .footer-bottom {
     display: none;
   }
-
 }
 
 /* 电脑屏幕 */
@@ -422,8 +484,8 @@ th {
   .mobile-banner-wrap {
     display: none;
   }
-  .mobile-module-divider-common {
-    /* display: none; */
+  .mobile-module-divider-common-download {
+    display: none;
   }
   .mobile-game-wrap {
     display: none;
@@ -439,3 +501,4 @@ th {
   }
 
 }
+
