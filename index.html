@@ -109,11 +109,11 @@
           <span class="common-line2-price">低至0.2元</span>
           <span class="common-line2-game">/千款游戏/开机即玩/顺畅不卡顿</span>
         </div>
-        <div class="see-more-game-btn">查看更多游戏</div>
+        <div class="see-more-game-btn" onclick="handleSeeMoreGame()">查看更多游戏</div>
       </div>
       <div class="more-game-right">
         <div class="more-game-content">
-
+          <img src="./images/game-list.png"/>
         </div>
       </div>
     </div>
@@ -123,7 +123,8 @@
   <!-- 手机端查看更多游戏开始 -->
   <div class="mobile-game-wrap"> 
     <div class="mobile-game-img">
-      查看更多区域图片滚动....
+      <!-- 查看更多区域图片滚动.... -->
+      
     </div>
     <div class="mobile-more-game">查看更多游戏</div>
   </div>
@@ -357,7 +358,9 @@
   <!-- 手机端蒙板开始 -->
   <div class="mobile-more-menu-mask">
     <div class="mobile-more-menu">
-      <div class="btn-close" onclick="handleDisMoreMenu()">叉叉</div>
+      <div class="btn-close" onclick="handleDisMoreMenu()">
+        <i class="iconfont icon-a-Maskgroup"></i>
+      </div>
       <div class="mobile-more-nav"><a href="./index.html">首页</a></div>
       <div class="mobile-more-nav"><a href="./price.html">价格</a></div>
     </div>
@@ -365,7 +368,7 @@
   <!-- 手机端蒙板结束 -->
 
   <!-- 侧边栏客服开始 -->
-  <div class="sidebar">
+  <div class="pc-sidebar">
     <div class="services">
       <i class="iconfont icon-Frame3"></i>
       <span class="services-link">在线客服</span>
@@ -376,6 +379,25 @@
     </div>
   </div>
   <!-- 侧边栏客服结束 -->
+
+  <!-- 弹框下载更多游戏开始 -->
+  <div class="more-game-download-wrap">
+    <div class="more-game-download-mask" onclick="handleMaskClick(event)"></div>
+    <div class="more-game-download">
+       <div class="more-game-download-right">
+        <div class="more-game-download-title">下载客户端，即可搜索更多游戏！！</div>
+        <div class="more-game-pc-download">
+          <div class="more-game-mac-download"><i class="iconfont icon-Frame41"></i>苹果MAC版下载</div>
+          <div class="more-game-window-download"><i class="iconfont icon-Vector1"></i>Windows版下载</div>
+        </div>
+        <div class="more-game-mobile-download">
+          <img />
+          <div><i class="iconfont icon-Frame61"></i>移动端</div>
+        </div>
+       </div>
+    </div>
+  </div>
+  <!-- 弹框下载更多游戏结束 -->
 
   <script>
     // 点击手机端头部，查看更多菜单按钮
@@ -392,6 +414,26 @@
     function gotoTop () {
       document.body.scrollTop = 0;
       document.documentElement.scrollTop = 0
+    }
+
+    function handleSeeMoreGame () {
+      document.getElementsByClassName('more-game-download-wrap')[0].style.display = 'block'
+    }
+
+    function handleMaskClick(event) {  
+      // 检查点击的目标元素或其父元素是否包含more-game-download类名  
+      var target = event.target;  
+      while (target && target !== document.body) {  
+        if (target.classList.contains('more-game-download')) {  
+          return;  
+        }  
+        target = target.parentNode;  
+      }  
+      closePopup();  
+    }  
+
+    function closePopup() {  
+      document.getElementsByClassName('more-game-download-wrap')[0].style.display = 'none';  
     }
   </script>
 </body>

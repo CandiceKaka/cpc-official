@@ -6,6 +6,13 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "40113852",
+      "name": "Mask group",
+      "font_class": "a-Maskgroup",
+      "unicode": "e657",
+      "unicode_decimal": 58967
+    },
+    {
       "icon_id": "40077272",
       "name": "arrow-left",
       "font_class": "arrow-left",
