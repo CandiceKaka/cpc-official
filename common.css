@@ -270,12 +270,57 @@ th {
 }
 .footer-item-text {
   cursor: pointer;
+  position: relative;
 }
 .footer-item-text:hover {
   color: #ffff;
 }
 .footer-item a:hover{
   color: #fff;
+}
+.footer-qrcode-common {
+  position: absolute;
+  width: 112px;
+  height: 112px;
+  background-color: #373737;
+  padding: 8px;
+  z-index: 1;
+  display: none;
+}
+.wechat-qrcode::after, .douyin-qrcode::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 0px;
+  height: 0px;
+  margin-left: -10px;
+}
+.footer-qrcode-common img {
+  width: 100%;
+  height: 100%;
+}
+.footer-item-text:hover .footer-qrcode-common {  
+  display: block; /* 当hover在footer-item-text上时显示二维码 */  
+}
+.wechat-qrcode {
+  top: -125px;
+  left: -30px;
+}
+.wechat-qrcode::after {
+  bottom: -9px;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #373737;
+}
+.douyin-qrcode {
+  left: -30px;
+  top: 30px;
+}
+.douyin-qrcode::after {
+  top: -9px;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #373737;
 }
 .footer-bottom a:hover {
   color: #fff;
@@ -463,6 +508,12 @@ th {
   .module-divider-common1 {
     display: none;
   }
+  .divider-left-img {
+    display: none;
+  }
+  .divider-right-img {
+    display: none;
+  }
   .mobile-module-divider-common {
     text-align: center;
     color: #2c2c2c;
@@ -519,6 +570,11 @@ th {
   .mobile-more-menu-mask {
     display: none;
   }
-
+  .divider-left-img-mobile {
+    display: none;
+  }
+  .divider-right-img-mobile {
+    display: none;
+  }
 }
 

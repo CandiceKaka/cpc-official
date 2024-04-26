@@ -14,7 +14,7 @@
   <div class="header">
     <div class="header-content clearfix">
      <div class="header-left">
-       <img class="header-left-logo" src="./images/header-logo.png"/>
+      <a href="https://cpc.icloud.cn/"><img class="header-left-logo" src="./images/header-logo.png"/></a>
        <ul class="header-nav clearfix">
          <li><a href="./index.html">首页</a></li>
          <li><a class="a-active" href="./price.html">价格</a></li>
@@ -40,11 +40,13 @@
   
   <div class="price-con-wrap">
     <div class="module-divider-common-price mobile-module-divider-common">
-      <img  src="./images/divier-left.png"/>
+      <img  src="./images/divier-left.png" class="divider-left-img"/>
+      <img  src="./images/divier-left-mobile.png" class="divider-left-img-mobile"/>
       <span class="divider-content-text">
         高性价比 + 多种选择
       </span>
-      <img src="./images/divider-right.png"/>
+      <img src="./images/divider-right.png" class="divider-right-img"/>
+      <img src="./images/divider-right-mobile.png" class="divider-right-img-mobile"/>
     </div> 
 
     <!-- pc端价格开始 -->
@@ -308,14 +310,23 @@
 
       <div class="footer-item">
         <div class="footer-item-title">官方渠道</div>
-        <div class="footer-item-line footer-item-text"><i class="iconfont icon-Frame11"></i>微信</div>
-        <div class="footer-item-line footer-item-text"><i class="iconfont icon-Frame21"></i>抖音</div>
+        <div class="footer-item-line footer-item-text">
+          <i class="iconfont icon-Frame11"></i>微信
+          <div class="footer-qrcode-common wechat-qrcode">
+            <img src="./images/qrcode-wechat.png"/>
+          </div>
+        </div>
+        <div class="footer-item-line footer-item-text">
+          <i class="iconfont icon-Frame21"></i>抖音
+          <div class="footer-qrcode-common douyin-qrcode">
+            <img src="./images/qrcode-douyin.png"/>
+          </div>
+        </div>
       </div>
 
       <div class="footer-item">
         <div class="footer-item-title">友情链接</div>
         <div class="footer-item-line"><a href="https://www.shunwang.com/?from=icloudpc" target="_blank">
-          <!-- <i class="iconfont icon-a-Group13772"></i> -->
           <img src="./images/shunwang.png"/>
         </a>
         </div>
@@ -394,9 +405,9 @@
     <div class="mobile-footer-item">
       <div class="mobile-footer-title-text">友情链接</div>
       <div>
-        <a href="" class="friend-link mobile-footer-con-text">顺网科技</a>
-        <a href="" class="friend-link mobile-footer-con-text">顺网算力</a>
-        <a href="" class="friend-link mobile-footer-con-text">泡泡加速器</a>
+        <a href="https://www.shunwang.com/?from=icloudpc" class="friend-link mobile-footer-con-text">顺网科技</a>
+        <a href="https://scc.icloud.cn/home" class="friend-link mobile-footer-con-text">顺网算力</a>
+        <a href="https://www.lianwuyu.com/?from=icloudpc" class="friend-link mobile-footer-con-text">泡泡加速器</a>
       </div>
     </div>
 
@@ -482,7 +493,4 @@
       swiper.slideTo(index); // 切换到指定索引的slide
     }
 </script>
-<script>
- 
-</script>
-</html>
+</html> 

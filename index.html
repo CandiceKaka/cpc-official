@@ -13,7 +13,7 @@
   <div class="header">
      <div class="header-content clearfix">
       <div class="header-left">
-        <img class="header-left-logo" src="./images/header-logo.png"/>
+        <a href="https://cpc.icloud.cn/"><img class="header-left-logo" src="./images/header-logo.png"/></a>
         <ul class="header-nav clearfix">
           <li><a class="a-active"  href="/index.html">首页</a></li>
           <li><a href="./price.html">价格</a></li>
@@ -95,7 +95,9 @@
    <!-- 手机端中间分隔开始 -->
   <div class="mobile-module-divider-common mobile-module-divider-common-download">
     <span class="mobile-divider-content1">
+      <img  src="./images/divier-left-mobile.png" class="divider-left-img-mobile"/>
       下载客户端，查看更多游戏
+      <img src="./images/divider-right-mobile.png" class="divider-right-img-mobile"/>
     </span>
   </div> 
   <!-- 手机端中间分隔结束 -->
@@ -111,20 +113,20 @@
         </div>
         <div class="see-more-game-btn" onclick="handleSeeMoreGame()">查看更多游戏</div>
       </div>
+      
       <div class="more-game-right">
-        <div class="more-game-content">
-          <img src="./images/game-list.png"/>
+        <div class="more-game-right-content">
         </div>
       </div>
     </div>
   </div>
+  
   <!-- 查看更多游戏结束 -->
 
   <!-- 手机端查看更多游戏开始 -->
   <div class="mobile-game-wrap"> 
-    <div class="mobile-game-img">
+    <div class="mobile-game-img-list">
       <!-- 查看更多区域图片滚动.... -->
-      
     </div>
     <div class="mobile-more-game">查看更多游戏</div>
   </div>
@@ -132,12 +134,13 @@
  
   <!-- 分隔开始 -->
 
-
   <div class="module-divider-common2 mobile-module-divider-common">
     <span class="divider-content2">
-      <img src="./images/divier-left.png"/>
+      <img  src="./images/divier-left.png" class="divider-left-img"/>
+      <img  src="./images/divier-left-mobile.png" class="divider-left-img-mobile"/>
       <span class="divider-content-text">价格实惠，种类多</span> 
-      <img src="./images/divider-right.png"/>
+      <img src="./images/divider-right.png" class="divider-right-img"/>
+      <img src="./images/divider-right-mobile.png" class="divider-right-img-mobile"/>
     </span>
   </div>
   <!-- 分隔结束 -->
@@ -250,14 +253,23 @@
 
       <div class="footer-item">
         <div class="footer-item-title">官方渠道</div>
-        <div class="footer-item-line footer-item-text"><i class="iconfont icon-Frame11"></i>微信</div>
-        <div class="footer-item-line footer-item-text"><i class="iconfont icon-Frame21"></i>抖音</div>
+        <div class="footer-item-line footer-item-text">
+          <i class="iconfont icon-Frame11"></i>微信
+          <div class="footer-qrcode-common wechat-qrcode">
+            <img src="./images/qrcode-wechat.png"/>
+          </div>
+        </div>
+        <div class="footer-item-line footer-item-text">
+          <i class="iconfont icon-Frame21"></i>抖音
+          <div class="footer-qrcode-common douyin-qrcode">
+            <img src="./images/qrcode-douyin.png"/>
+          </div>
+        </div>
       </div>
 
       <div class="footer-item">
         <div class="footer-item-title">友情链接</div>
         <div class="footer-item-line"><a href="https://www.shunwang.com/?from=icloudpc" target="_blank">
-          <!-- <i class="iconfont icon-a-Group13772"></i> -->
           <img src="./images/shunwang.png"/>
         </a>
         </div>

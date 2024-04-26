@@ -124,6 +124,7 @@
   height: 680px;
   margin: 0 auto;
 }
+
 .more-game-left {
   margin-top: 228px;
   width: 484px;
@@ -135,9 +136,24 @@
    float: right;
    overflow: hidden;
 }
-.more-game-content {
-  height: 200%;
+
+.more-game-right-content {
+  width: 100%;
+  height: 100%;
+  background: url('./images/game-list2.png') repeat-y;
+  animation: scrollMoreGame 5s linear infinite;
+  -webkit-animation: scrollMoreGame 5s linear infinite;
 }
+
+@keyframes scrollMoreGame {
+  0% {
+    background-position: 0, 0;
+  }
+  100% {
+    background-position: 0 100%;
+  }
+}
+
 
 .see-more-game-btn {
   width: 272px;
@@ -194,11 +210,9 @@
   height: 124px;
   text-align: center;
   vertical-align: top;
-  /* color: #fff; */
   cursor: pointer;
   background-color: #fff;
   padding-top: 4px;
-  /* padding: 0 14px; */
 }
 .more-game-mobile-download img {
   width: 96px;
@@ -234,12 +248,24 @@
 /* 查看更多游戏结束 */
 
 /* 手机端查看更多游戏结束 */
-.mobile-game-img {
+.mobile-game-img-list {
   background-color: #EBECED;
   height: 1.82rem;
   margin-bottom: .15rem;
-  background: url('./images/game-list-mobile.png') no-repeat 50%;
+  background: url('./images/game-list-mobile.png') no-repeat 50% 0;
+  animation: scrollMoreGameMobile 5s linear infinite;
+  -webkit-animation: scrollMoreGameMobile 5s linear infinite;
 }
+
+@keyframes scrollMoreGameMobile {
+  0% {
+    background-position: 50% 0;
+  }
+  100% {
+    background-position: 50% 100%;
+  }
+}
+
 .mobile-more-game {
   width: 1.48rem;
   height: .36rem;
@@ -250,6 +276,7 @@
   margin: 0 auto;
   background-color: #373737;
 }
+
 
 /* 手机端查看更多游戏结束 */
 
