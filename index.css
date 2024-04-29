@@ -16,7 +16,22 @@
   width: 528px;
   float: left;
   margin-top: 344px;
+  animation: slideUp 0.8s ease-out forwards;
+  -webkit-animation: slideUp 0.8s ease-out forwards;
 }
+/* 定义动画 */  
+@keyframes slideUp {  
+  from {  
+    transform: translateY(100%); /* 从下方开始，移动元素自身高度的100% */  
+    opacity: 0; /* 可选：开始时元素透明 */  
+  }  
+  to {  
+    transform: translateY(0); /* 到顶部结束，不移动 */  
+    opacity: 1; /* 可选：结束时元素不透明 */  
+  }  
+}
+
+
 .common-left-title {
   font-weight: bold;
   font-family: 'PingFang SC-Bold';
@@ -114,6 +129,10 @@
   padding-bottom: 0.45rem;
   margin-top: 0.64rem;
 }
+.mobile-banner-content {
+  animation: slideUp 0.8s ease-out forwards;
+  -webkit-animation: slideUp 0.8s ease-out forwards;
+}
 .mobile-banner-title {
   font-size: .28rem;
   text-align: center;
@@ -180,15 +199,7 @@
 .more-game-download-wrap {
   display: none;
 }
-/* .more-game-download-mask {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(57,57,57,0.5);
-  z-index: 3;
-} */
+
 .more-game-download {
   width: 1200px;
   height: 477px;

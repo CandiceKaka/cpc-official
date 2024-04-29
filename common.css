@@ -529,7 +529,6 @@ th {
 }
 .online-mobile-content {
   text-align: center;
-  /* padding-top: 57px; */
   padding: 57px 102px 0;
 }
 .online-mobile-info-input {
@@ -631,8 +630,8 @@ th {
     line-height: 0.68rem;
   }
   .mobile-divider-content1 {
-    background: url('./images/divider-bg1.png') no-repeat 50% 100%;
-    background-size: contain;
+    /* background: url('./images/divider-bg1.png') no-repeat 50% 100%;
+    background-size: contain; */
   }
   .module-divider-common2 {
     font-size: 20px;
