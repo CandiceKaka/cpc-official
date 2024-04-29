@@ -480,9 +480,6 @@ th {
   text-align: center;
   margin-right:1%;
 }
-.footer-code-item img {
-  /* width: 100%; */
-}
 
 /* 手机端底部结束 */
 
@@ -630,8 +627,12 @@ th {
     line-height: 0.68rem;
   }
   .mobile-divider-content1 {
-    /* background: url('./images/divider-bg1.png') no-repeat 50% 100%;
-    background-size: contain; */
+    background: url('./images/divider-bg1-mobile.png') no-repeat 50% 70%;
+    background-size: contain;
+    display: inline-block;
+  }
+  .divider-content2 {
+    background: url('./images/divider-bg2-mobile.png') no-repeat 50% 75%;
   }
   .module-divider-common2 {
     font-size: 20px;

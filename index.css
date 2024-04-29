@@ -258,6 +258,9 @@
   display: inline-block;
   background-color: #fff;
 }
+.more-game-mac-download:hover, .more-game-window-download:hover {
+  background-color: #ededed;
+}
 .more-game-window-download {
   width: 100%;
   height: 54px;
