@@ -48,6 +48,9 @@ th {
   overflow: hidden;
   visibility: hidden;
 }
+.pull-right {
+  float: right;
+}
 
 
 /* 业务样式 */
@@ -385,12 +388,16 @@ th {
   text-align: center;
   padding-top: 12px;
   cursor: pointer;
-  /* padding: 0 24px; */
+  user-select: none;
+}
+.pc-sidebar .services:hover {
+  background: linear-gradient( #76D8F6 17%, #3982F0 92%);
 }
 .services-link {
   display: inline-block;
   padding: 10px 24px;
 }
+
 .pc-sidebar .services i {
   font-size: 40px;
   margin-bottom: 4px;
@@ -415,6 +422,9 @@ th {
 .goto-top .iconfont {
   font-size: 20px;
   margin-bottom: 6px;
+}
+.goto-top:hover {
+  background-color: #f2f2f2;
 }
 
 /* pc端侧边栏联系客服结束 */
@@ -476,6 +486,105 @@ th {
 
 /* 手机端底部结束 */
 
+
+/* 登录在线客服系统开始 */
+.common-mask {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(57,57,57,0.5);
+  z-index: 3;
+}
+
+.online-mobile-wrap {
+  display: none;
+}
+.online-mobile-content-wrap {
+  width: 444px;
+  height: 291px;
+  background-color: #f2f2f2;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  position: absolute;
+  top: 50%;
+  margin-top: -145px;
+  left: 50%;
+  margin-left: -222px;
+  z-index: 4;
+  color: #2c2c2c;
+  font-size: 12px;
+}
+.online-mobile-title {
+  height: 32px;
+  line-height: 32px;
+  border-bottom: 1px solid #d9d9d9;
+  padding: 0 24px;
+  position: relative;
+
+}
+.online-mobile-content {
+  text-align: center;
+  /* padding-top: 57px; */
+  padding: 57px 102px 0;
+}
+.online-mobile-info-input {
+  margin-bottom: 4px;
+}
+.online-mobile-info-input input {
+  width: 240px;
+  height: 33px;
+  border-radius: 4px 4px 4px 4px;
+  border: 1px solid #4B576D;
+  padding-left: 2px;
+}
+
+.online-mobile-error {
+  color: #ff4646;
+  margin-bottom: 12px;
+  text-align: left;
+  visibility: hidden;
+}
+.online-mobile-info {
+  text-align: left;
+  margin-bottom: 16px;
+}
+.online-button {
+  width: 240px;
+  height: 33px;
+  line-height: 33px;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  background: #218AF9;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+.online-button:hover {
+  background-color: #539FEF;
+}
+.online-mobile-close-icon {
+  cursor: pointer;
+}
+.online-mobile-close-icon::after {
+  position: absolute;
+  content: '';
+  top: 0px;
+  bottom: 0px;
+  right: 19px;
+  width: 37px;
+  height: 26px;
+
+}
+
+/* 登录在线客服系统结束 */
 
 /* 屏幕宽度小于769 使用移动端样式 */
 

@@ -35,7 +35,12 @@
   line-height: 35px;
   font-size: 20px;
   color: #fff;
-  background-image: url('./images/banner-price-bg.png');
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  background: linear-gradient( 90deg, #E54444 0%, #AD5BB6 61%, #3A5EE0 100%);
 }
 .common-line2-game {
   vertical-align: top;
@@ -67,6 +72,10 @@
   background-color: #373737;
   cursor: pointer;
 }
+.download-windows:hover, .download-mac:hover, .banner-mobile-download:hover {
+  background-color: #505050;
+}
+
 .download-mac {
   height: 80px;
   line-height: 80px;
@@ -165,10 +174,13 @@
   background-color: #373737;
   cursor: pointer;
 }
+.see-more-game-btn:hover {
+  background-color: #505050;
+}
 .more-game-download-wrap {
   display: none;
 }
-.more-game-download-mask {
+/* .more-game-download-mask {
   position: fixed;
   top: 0;
   bottom: 0;
@@ -176,7 +188,7 @@
   right: 0;
   background: rgba(57,57,57,0.5);
   z-index: 3;
-}
+} */
 .more-game-download {
   width: 1200px;
   height: 477px;
@@ -293,10 +305,11 @@
 .price-preview-item {
   display: inline-block;
   width: 270px;
-  height: 308px;
+  height: 337px;
   text-align: center;
   padding-top: 24px;
   background-color: #fff;
+  cursor: pointer;
   border-radius: 14px;
   -webkit-border-radius: 14px;
   -moz-border-radius: 14px;
@@ -304,6 +317,18 @@
   -o-border-radius: 14px;
   position: relative;
   margin-right: 30px;
+  transition:all 0.5s ease;
+  -webkit-transition:all 0.5s ease;
+  -moz-transition:all 0.5s ease;
+  -ms-transition:all 0.5s ease;
+  -o-transition:all 0.5s ease;
+}
+.price-preview-item:hover {
+  transform: scale(1.04,1.04);
+  -webkit-transform: scale(1.04,1.04);
+  -moz-transform: scale(1.04,1.04);
+  -ms-transform: scale(1.04,1.04);
+  -o-transform: scale(1.04,1.04);
 }
 .price-preview-item:last-child {
   margin-right: 0px;
@@ -326,8 +351,14 @@
   font-family: 'PingFang SC-Bold';
   font-weight: bold;
   padding-top: 10px;
+  margin-bottom: 14px;
 }
-.price-buy {
+.price-see-more {
+  color: #686868;
+  font-size: 16px;
+}
+
+/* .price-buy {
   position: absolute;
   width: 136px;
   height: 50px;
@@ -346,6 +377,9 @@
   cursor: pointer;
   user-select: none;
 }
+.price-buy:hover {
+  background-color: #444;
+} */
 /* 首页价格結束 */
 
 /* 手机端首页价格开始 */
@@ -384,6 +418,7 @@
 .mobile-price-count {
   font-size: .14rem;
   color: #FB5B0E;
+  margin-bottom: .14rem;
 }
 .mobile-price-buy {
   position: absolute;
@@ -417,13 +452,18 @@
     margin-bottom: .18rem;
   }
   .common-line2-price {
-    width: 70px;
-    height: 28px;
+    width: 0.7rem;
+    height: 0.28rem;
     line-height: 0.28rem;
     font-size: .14rem;
     margin-right: 8px;
-    background-image: url('./images/banner-price-bg-mobile.png');
-  }
+    background: linear-gradient( 90deg, #E54444 0%, #AD5BB6 61%, #3A5EE0 100%);
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
   .common-line2-game {
     font-size: .14rem;
     vertical-align: middle;
@@ -445,6 +485,7 @@
     height: .52rem;
     line-height: .52rem;
   }
+
   .banner-mobile-download {
     width: 1.08rem;
     height: 1.08rem;
