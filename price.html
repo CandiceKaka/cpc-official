@@ -51,83 +51,106 @@
 
     <!-- pc端价格开始 -->
     <div class="price-kind-wrap">
-      <div class="price-kind-wrap-title" onclick="toggleActiveClass(event)">
-        <span class="price-kind-title price-kind-wrap-title-active">周期卡</span>
-        <span class="price-kind-title">时长卡</span>
-        <span class="price-kind-title">时段卡</span>
+      <div class="price-kind-wrap-title">
+        <span class="price-kind-title price-kind-wrap-title-active" onclick="gotoPcSlide(0)">周期卡</span>
+        <span class="price-kind-title" onclick="gotoPcSlide(1)">时长卡</span>
+        <span class="price-kind-title" onclick="gotoPcSlide(2)">时段卡</span>
       </div>
 
-      <div>
-        <div class="price-item">
-          <span class="price-hour">1.2元/时</span>
-          <div class="price-title price-text">月卡.每日两小时</div>
-          <img src="./images/crown2.png"/>
-          <div class="price-line"><span class="money-count">¥72</span>/月</div>
-          <div class="origin-price">90元/月</div>
-          <div class="price-explain">
-            <div class="price-text"><i class="iconfont icon-Frame71"></i>每日两小时</div>
-            <div class="price-text"><i class="iconfont icon-Frame71"></i>多端共享</div>
-            <div class="price-text"><i class="iconfont icon-Frame71"></i>任何时段</div>
+      <div class="swiper-container swiper-container-pc">
+        <div class="swiper-wrapper">
+          <!-- 周期卡 -->
+          <div class="swiper-slide">
+            <div class="price-item">
+              <span class="price-hour">1.2元/时</span>
+              <div class="price-title price-text">月卡.每日两小时</div>
+              <img src="./images/crown2.png"/>
+              <div class="price-line"><span class="money-count">¥72</span>/月</div>
+              <div class="origin-price">90元/月</div>
+              <div class="price-explain">
+                <div class="price-text"><i class="iconfont icon-Frame71"></i>每日两小时</div>
+                <div class="price-text"><i class="iconfont icon-Frame71"></i>多端共享</div>
+                <div class="price-text"><i class="iconfont icon-Frame71"></i>任何时段</div>
+              </div>
+            </div>
+            <div class="price-item">
+              <span class="price-hour">1.2元/时</span>
+              <div class="price-title price-text">月卡.每日两小时</div>
+              <img src="./images/crown2.png"/>
+              <div class="price-line"><span class="money-count">¥72</span>/月</div>
+              <div class="origin-price">90元/月</div>
+              <div class="price-explain">
+                <div class="price-text"><i class="iconfont icon-Frame71"></i>每日两小时</div>
+                <div class="price-text"><i class="iconfont icon-Frame71"></i>多端共享</div>
+                <div class="price-text"><i class="iconfont icon-Frame71"></i>任何时段</div>
+              </div>
+            </div>
+            <div class="price-item">
+              <span class="price-hour">1.2元/时</span>
+              <div class="price-title price-text">月卡.每日两小时</div>
+              <img src="./images/crown2.png"/>
+              <div class="price-line"><span class="money-count">¥72</span>/月</div>
+              <div class="origin-price">90元/月</div>
+              <div class="price-explain">
+                <div class="price-text"><i class="iconfont icon-Frame71"></i>每日两小时</div>
+                <div class="price-text"><i class="iconfont icon-Frame71"></i>多端共享</div>
+                <div class="price-text"><i class="iconfont icon-Frame71"></i>任何时段</div>
+              </div>
+            </div>
+            <div class="price-item">
+              <span class="price-hour">1.2元/时</span>
+              <div class="price-title price-text">月卡.每日两小时</div>
+              <img src="./images/crown2.png"/>
+              <div class="price-line"><span class="money-count">¥72</span>/月</div>
+              <div class="origin-price">90元/月</div>
+              <div class="price-explain">
+                <div class="price-text"><i class="iconfont icon-Frame71"></i>每日两小时</div>
+                <div class="price-text"><i class="iconfont icon-Frame71"></i>多端共享</div>
+                <div class="price-text"><i class="iconfont icon-Frame71"></i>任何时段</div>
+              </div>
+            </div>
+            <div class="price-item">
+              <span class="price-hour">1.2元/时</span>
+              <div class="price-title price-text">月卡.每日两小时</div>
+              <img src="./images/crown2.png"/>
+              <div class="price-line"><span class="money-count">¥72</span>/月</div>
+              <div class="origin-price">90元/月</div>
+              <div class="price-explain">
+                <div class="price-text"><i class="iconfont icon-Frame71"></i>每日两小时</div>
+                <div class="price-text"><i class="iconfont icon-Frame71"></i>多端共享</div>
+                <div class="price-text"><i class="iconfont icon-Frame71"></i>任何时段</div>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="price-item">
-          <span class="price-hour">1.2元/时</span>
-          <div class="price-title price-text">月卡.每日两小时</div>
-          <img src="./images/crown2.png"/>
-          <div class="price-line"><span class="money-count">¥72</span>/月</div>
-          <div class="origin-price">90元/月</div>
-          <div class="price-explain">
-            <div class="price-text"><i class="iconfont icon-Frame71"></i>每日两小时</div>
-            <div class="price-text"><i class="iconfont icon-Frame71"></i>多端共享</div>
-            <div class="price-text"><i class="iconfont icon-Frame71"></i>任何时段</div>
+          <!-- 时长卡 -->
+          <div class="swiper-slide">
+            <div class="price-item">
+              <span class="price-hour">1.2元/时</span>
+              <div class="price-title price-text">月卡.每日两小时</div>
+              <img src="./images/crown2.png"/>
+              <div class="price-line"><span class="money-count">¥72</span>/月</div>
+              <div class="origin-price">90元/月</div>
+              <div class="price-explain">
+                <div class="price-text"><i class="iconfont icon-Frame71"></i>每日两小时</div>
+                <div class="price-text"><i class="iconfont icon-Frame71"></i>多端共享</div>
+                <div class="price-text"><i class="iconfont icon-Frame71"></i>任何时段</div>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="price-item">
-          <span class="price-hour">1.2元/时</span>
-          <div class="price-title price-text">月卡.每日两小时</div>
-          <img src="./images/crown2.png"/>
-          <div class="price-line"><span class="money-count">¥72</span>/月</div>
-          <div class="origin-price">90元/月</div>
-          <div class="price-explain">
-            <div class="price-text"><i class="iconfont icon-Frame71"></i>每日两小时</div>
-            <div class="price-text"><i class="iconfont icon-Frame71"></i>多端共享</div>
-            <div class="price-text"><i class="iconfont icon-Frame71"></i>任何时段</div>
-          </div>
-        </div>
-        <div class="price-item">
-          <span class="price-hour">1.2元/时</span>
-          <div class="price-title price-text">月卡.每日两小时</div>
-          <img src="./images/crown2.png"/>
-          <div class="price-line"><span class="money-count">¥72</span>/月</div>
-          <div class="origin-price">90元/月</div>
-          <div class="price-explain">
-            <div class="price-text"><i class="iconfont icon-Frame71"></i>每日两小时</div>
-            <div class="price-text"><i class="iconfont icon-Frame71"></i>多端共享</div>
-            <div class="price-text"><i class="iconfont icon-Frame71"></i>任何时段</div>
-          </div>
-        </div>
-        <div class="price-item">
-          <span class="price-hour">1.2元/时</span>
-          <div class="price-title price-text">月卡.每日两小时</div>
-          <img src="./images/crown2.png"/>
-          <div class="price-line"><span class="money-count">¥72</span>/月</div>
-          <div class="origin-price">90元/月</div>
-          <div class="price-explain">
-            <div class="price-text"><i class="iconfont icon-Frame71"></i>每日两小时</div>
-            <div class="price-text"><i class="iconfont icon-Frame71"></i>多端共享</div>
-            <div class="price-text"><i class="iconfont icon-Frame71"></i>任何时段</div>
-          </div>
-        </div>
-        <div class="price-item">
-          <span class="price-hour">1.2元/时</span>
-          <div class="price-title price-text">月卡.每日两小时</div>
-          <img src="./images/crown2.png"/>
-          <div class="price-line"><span class="money-count">¥72</span>/月</div>
-          <div class="origin-price">90元/月</div>
-          <div class="price-explain">
-            <div class="price-text"><i class="iconfont icon-Frame71"></i>每日两小时</div>
-            <div class="price-text"><i class="iconfont icon-Frame71"></i>多端共享</div>
-            <div class="price-text"><i class="iconfont icon-Frame71"></i>任何时段</div>
+          <!-- 时段卡 -->
+          <div class="swiper-slide">
+            <div class="price-item">
+              <span class="price-hour">1.2元/时</span>
+              <div class="price-title price-text">月卡.每日两小时</div>
+              <img src="./images/crown2.png"/>
+              <div class="price-line"><span class="money-count">¥72</span>/月</div>
+              <div class="origin-price">90元/月</div>
+              <div class="price-explain">
+                <div class="price-text"><i class="iconfont icon-Frame71"></i>每日两小时</div>
+                <div class="price-text"><i class="iconfont icon-Frame71"></i>多端共享</div>
+                <div class="price-text"><i class="iconfont icon-Frame71"></i>任何时段</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -142,7 +165,7 @@
         <span class="mobile-kind-title" onclick="goToSlide(1)">时长卡</span>
         <span class="mobile-kind-title" onclick="goToSlide(2)">时段卡</span>
       </div>
-      <div class="swiper-container">
+      <div class="swiper-container swiper-container-mobile">
         <div class="swiper-wrapper">
           <!-- 周期卡 -->
           <div class="swiper-slide">
@@ -504,8 +527,28 @@
 </script>
 
 <script>
+
+  // pc端初始化swiper
+  var swiperPc = new Swiper('.swiper-container-pc', {
+    direction: 'horizontal',
+    on: {
+      slideChange: function () {
+        var activeIndex = this.activeIndex
+        document.querySelectorAll('.price-kind-title').forEach(function (title) {
+          title.classList.remove('price-kind-wrap-title-active')
+        })
+        document.querySelectorAll('.price-kind-title')[activeIndex].classList.add('price-kind-wrap-title-active')
+      }
+    }
+  })
+
+  function gotoPcSlide (index) {
+    swiperPc.slideTo(index)
+  }
+
+
   // 初始化Swiper
-  var swiper = new Swiper('.swiper-container', {
+  var swiper = new Swiper('.swiper-container-mobile', {
     // 设置为横向滑动
     direction: 'horizontal',
     on: {
@@ -519,10 +562,12 @@
     }
   });
 
-   // 外部按钮点击事件
-   function goToSlide(index) {
-      swiper.slideTo(index); // 切换到指定索引的slide
-    }
+  // 外部按钮点击事件
+  function goToSlide(index) {
+    swiper.slideTo(index); // 切换到指定索引的slide
+  }
+
+  
 </script>
 <script type="text/javascript" src="./common.js"></script>
 </html> 

@@ -4,6 +4,7 @@
 .price-kind-wrap {
   width: 1200px;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 
 .price-kind-wrap-title {
@@ -63,6 +64,7 @@
   margin-bottom: 40px;
   position: relative;
   cursor: pointer;
+  user-select: none;
 }
 .price-item:nth-child(4n) {
   margin-right: 0px;
@@ -173,9 +175,7 @@
 }
 
 /* 手机端价格 */
-.mobile-price-kind-wrap {
-  /* padding: 0 .24rem; */
-}
+
 .mobile-price-item {
   width: 48%;
   background-color: #fff;
@@ -190,16 +190,14 @@
   margin-bottom: .2rem;
   margin-right: 1%;
   position: relative;
+  user-select: none;
 }
-/* .mobile-price-item:nth-child(4n){
-  margin-right: 0;
-} */
+
 .mobile-price-hour {
   position: absolute;
   padding: 0 .04rem;
   top: -.08rem;
   left: 0;
-  /* width: .44rem; */
   height: .17rem;
   line-height: .17rem;
   color: #fff;
@@ -232,9 +230,7 @@
 
   
 }
-.swiper-slide {
-  padding: 0 .24rem;
-}
+
 
 
 /* // 手机端 */
@@ -244,6 +240,9 @@
   }
   .mobile-module-divider-common {
     background-color: transparent;
+  }
+  .swiper-slide {
+    padding: 0 .24rem;
   }
   .price-kind-wrap {
     display: none;
