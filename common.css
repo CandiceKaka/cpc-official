@@ -105,6 +105,9 @@ th {
   margin-top: 21px;
   cursor: pointer;
 }
+.header-download a {
+  color: #575757;
+}
 .header-download i {
   margin-right: 4px;
 }

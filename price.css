@@ -4,7 +4,7 @@
 .price-kind-wrap {
   width: 1200px;
   margin: 0 auto;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .price-kind-wrap-title {
