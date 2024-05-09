@@ -163,12 +163,11 @@ th {
   display: inline-block;
   margin-right: .17rem;
 }
-.mobile-more-menu-btn {
+.mobile-header-download a {
   font-size: 0.14rem;
   color: #6a6a6a;
   line-height: 0.3rem;
 }
-
 
 .mobile-more-menu-mask {
   position: fixed;
@@ -244,7 +243,7 @@ th {
 /* 页脚开始 */
 .footer-top {
   background-color: #111;
-  height: 278px;
+  /* height: 278px; */
   border-bottom: 1px solid #313131;
 }
 
@@ -260,9 +259,10 @@ th {
   margin: 0 auto;
 }
 .footer-top-content {
-  padding-top: 61px;
-  height: 278px;
-  padding-left: 80px;
+  /* padding-top: 61px; */
+  /* height: 278px; */
+  /* padding-left: 80px; */
+  padding: 61px 0 20px 80px;
 }
 .footer-item {
   color: #8e8e8e;
@@ -270,6 +270,9 @@ th {
   margin-right: 80px;
   display: inline-block;
   vertical-align: top;
+}
+.footer-item-link img {
+  height: 18px;
 }
 .footer-item a, .footer-bottom a {
   color: #8e8e8e;
@@ -665,7 +668,11 @@ th {
     display: none;
   }
   .mobile-banner-wrap {
-    display: none;
+    /* display: none; */
+    visibility: hidden;
+    height: 0;
+    margin-top: 0!important;
+    padding-bottom: 0!important;
   }
   .mobile-module-divider-common-download {
     display: none;
