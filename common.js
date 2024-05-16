@@ -41,3 +41,9 @@ function handleConsult () {
     handleCloseMobileMask()
   } 
 }
+
+// 返回顶部
+function gotoTop () {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0
+}

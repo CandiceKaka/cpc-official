@@ -570,7 +570,7 @@ body::-webkit-scrollbar-track {
   padding-left: 2px;
 }
 
-.online-mobile-error {
+.error-tip {
   color: #ff4646;
   margin-bottom: 12px;
   text-align: left;

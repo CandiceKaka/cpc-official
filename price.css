@@ -107,9 +107,12 @@
   margin-top: -14px;
 }
 .price-title {
-  padding-top: 24px;
   font-weight: bold;
   margin-bottom: 0px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 24px 6px 0;
 }
 .price-crown-wrap {
   width: 141px;
@@ -215,6 +218,9 @@
 }
 .mobile-price-title {
   font-weight: bold;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .mobile-money-count {
   color: #fb5b0e;

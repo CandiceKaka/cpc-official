@@ -420,7 +420,7 @@
   <!-- 弹框下载更多游戏结束 -->
 
   <!-- 弹框联系客服输入手机号开始 -->
-  <div class="online-mobile-wrap">
+  <div class="online-mobile-wrap online-service-wrapper">
     <div class="online-mobile-download-mask common-mask" onclick="handleMobileMask(event)"></div>
     <div class="online-mobile-content-wrap">
       <div class="online-mobile-title">
@@ -428,9 +428,9 @@
         <i class="iconfont icon-a-Maskgroup pull-right online-mobile-close-icon" onclick="handleCloseMobileMask()"></i>
       </div>
       <div class="online-mobile-content">
-        <div class="online-mobile-info">请输入您的手机号码，系统将关联您登记过的信息，以便我们高校的为您服务</div>
+        <div class="online-mobile-info">请输入您的手机号码，系统将关联您登记过的信息，以便我们高效的为您服务</div>
         <div class="online-mobile-info-input"><input placeholder="请输入手机号" type="text" id="mobileInput"/></div>
-        <div class="online-mobile-error" id="mobileError">手机号码格式错误</div>
+        <div class="error-tip" id="mobileError">手机号码格式错误</div>
         <div class="online-button" onclick="handleConsult()">立即咨询</div>
       </div>
     </div>
@@ -449,10 +449,6 @@
       ele.style.display = 'none'
     }
 
-    function gotoTop () {
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0
-    }
 
     function handleSeeMoreGame () {
       document.getElementsByClassName('more-game-download-wrap')[0].style.display = 'block'
