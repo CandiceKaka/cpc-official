@@ -2,7 +2,10 @@
 // 点击叉叉关闭弹框
 function handleCloseMobileMask () {
   document.getElementById('mobileInput').value = ''
-  document.getElementById('mobileError').style.visibility = 'hidden'
+  var errorEle = document.getElementById('mobileError')
+  if (errorEle) {
+    errorEle.style.visibility = 'hidden'
+  }
   document.getElementsByClassName('online-mobile-wrap')[0].style.display = 'none'
 }
 

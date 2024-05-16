@@ -86,6 +86,7 @@
   margin-bottom: 8px;
   background-color: #373737;
   cursor: pointer;
+  color: #fff;
 }
 .download-windows:hover, .download-mac:hover, .banner-mobile-download:hover {
   background-color: #505050;
@@ -105,7 +106,7 @@
   background: #373737;
   text-align: center;
 }
-.banner-mobile-download #app-download-qrcode-pc {
+.banner-mobile-download #app-download-qrcode-pc img {
   width: 96px;
   height: 96px;
   margin: 0 auto;
@@ -252,9 +253,10 @@
   background-color: #fff;
   padding-top: 4px;
 }
-.more-game-mobile-download #app-download-qrcode-more {
+.more-game-mobile-download #app-download-qrcode-more img {
   width: 96px;
   height: 96px;
+  margin: 0 auto;
 }
 .more-game-pc-download {
   width: 229px;
@@ -515,6 +517,7 @@
     cursor: pointer;
     height: .52rem;
     line-height: .52rem;
+    color: #fff;
   }
 
   .banner-mobile-download {
@@ -524,6 +527,7 @@
   .banner-mobile-download #app-download-qrcode-mobile {
     width: .64rem;
     height: .64rem;
+    margin: 0 auto;
   }
 }
 
