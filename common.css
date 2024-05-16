@@ -574,7 +574,8 @@ body::-webkit-scrollbar-track {
   color: #ff4646;
   margin-bottom: 12px;
   text-align: left;
-  visibility: hidden;
+  display: inline-block;
+  width: 100%;
 }
 .online-mobile-info {
   text-align: left;
