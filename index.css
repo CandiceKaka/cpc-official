@@ -266,7 +266,7 @@
   background-color: #fff;
   padding-top: 4px;
 }
-.more-game-mobile-download #app-download-qrcode-more img {
+.more-game-mobile-download #app-download-qrcode-more img, #app-download-qrcode-more2 img {
   width: 96px;
   height: 96px;
   margin: 0 auto;
