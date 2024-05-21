@@ -58,6 +58,7 @@
             <div><i class="iconfont icon-Frame61"></i>移动端</div>
           </div>
         </div>
+        <div class="download-new" onclick="downloadNew()">测试版（适用西北3区 华东1和22区）</div>
        </div>
         <div class="banner-right">
       </div>
@@ -121,8 +122,7 @@
       </div>
       
       <div class="more-game-right">
-        <div class="more-game-right-content">
-        </div>
+        <img class="more-game-right-content" src = "./images/game-list2.png"/>
       </div>
     </div>
   </div>
@@ -404,8 +404,8 @@
 
   <!-- 弹框下载更多游戏开始 -->
   <div class="more-game-download-wrap">
-    <div class="more-game-download-mask common-mask" onclick="handleMaskClick(event)"></div>
-    <div class="more-game-download">
+    <div class="more-game-download-mask common-mask" onclick="handleMaskClick(event, 'more-game-download')"></div>
+    <div class="more-game-download common-mask-content">
        <div class="more-game-download-right">
         <span class="more-game-download-close" onclick="closePopup()"><i class="iconfont icon-a-Maskgroup"></i></span>
         <div class="more-game-download-title">下载客户端，即可搜索更多游戏！！</div>
@@ -422,6 +422,26 @@
     </div>
   </div>
   <!-- 弹框下载更多游戏结束 -->
+
+   <!-- 弹框下载新版游戏开始 -->
+  <div class="new-client-mask" id="new-client-mask">
+    <div class="common-mask" onclick="handleMaskClick(event, 'common-mask-content')"></div>
+    <div class="common-mask-content download-new-con">
+      <div class="more-game-download-right">
+        <span class="more-game-download-close" onclick="closeDownNew()"><i class="iconfont icon-a-Maskgroup"></i></span>
+        <div class="more-game-download-title">测试版（适用西北3区 华东1区和22区）</div>
+        <div class="more-game-pc-download">
+          <a><div class="more-game-mac-download"><i class="iconfont icon-Frame41"></i>苹果MAC版下载</div></a>
+          <div class="more-game-window-download"><i class="iconfont icon-Vector1"></i>Windows版下载</div>
+        </div>
+        <div class="more-game-mobile-download">
+          <div id="app-download-qrcode-more"></div>
+          <div><i class="iconfont icon-Frame61"></i>移动端</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 弹框下载新版游戏结束 -->
 
   <!-- 弹框联系客服输入手机号开始 -->
   <div class="online-mobile-wrap online-service-wrapper">
@@ -458,20 +478,32 @@
       document.getElementsByClassName('more-game-download-wrap')[0].style.display = 'block'
     }
 
-    function handleMaskClick(event) {  
+    function handleMaskClick(event, className) {  
       // 检查点击的目标元素或其父元素是否包含more-game-download类名  
       var target = event.target;  
       while (target && target !== document.body) {  
-        if (target.classList.contains('more-game-download')) {  
+        if (target.classList.contains(className)) {  
           return;  
         }  
         target = target.parentNode;  
       }  
-      closePopup();  
+      if (className === 'more-game-download') {
+        closePopup();  
+      } else {
+        closeDownNew()
+      }
     }  
 
     function closePopup() {  
       document.getElementsByClassName('more-game-download-wrap')[0].style.display = 'none';  
+    }
+
+    function closeDownNew() {
+      document.getElementById('new-client-mask').style.display = 'none'
+    }
+
+    function downloadNew () {
+      document.getElementById('new-client-mask').style.display = 'block'
     }
   </script>
 

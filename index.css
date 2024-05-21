@@ -66,6 +66,7 @@
 .banner-line3 {
   color: #fff;
   font-size: 24px;
+  margin-bottom: 8px;
 }
 .banner-line3 .iconfont {
   font-size: 24px;
@@ -80,24 +81,23 @@
   vertical-align: top;
   
 }
-.download-windows {
-  height: 80px;
-  line-height: 80px;
-  margin-bottom: 8px;
-  background-color: #373737;
-  cursor: pointer;
-  color: #fff;
+
+.download-new {
+  width: 469px;
+  font-size: 24px;
+  text-align: center;
 }
-.download-windows:hover, .download-mac:hover, .banner-mobile-download:hover {
+.download-windows:hover, .download-mac:hover, .banner-mobile-download:hover, .download-new:hover {
   background-color: #505050;
 }
 
-.download-mac {
+.download-mac, .download-windows, .download-new {
   height: 80px;
   line-height: 80px;
   background-color: #373737;
   cursor: pointer;
   color: #fff;
+  margin-bottom: 8px;
 }
 .banner-mobile-download {
   padding-top: 16px;
@@ -169,20 +169,22 @@
 }
 
 .more-game-right-content {
-  width: 100%;
-  height: 100%;
-  background: url('./images/game-list2.png') repeat-y;
-  animation: scrollMoreGame 5s linear infinite;
-  -webkit-animation: scrollMoreGame 5s linear infinite;
+  width: 656px;
+  animation: scrollMoreGame 7s linear infinite;
+  -webkit-animation: scrollMoreGame 7s linear infinite;
 }
 
 @keyframes scrollMoreGame {
   0% {
-    background-position: 0, 0;
+    transform: translateY(0);
   }
   100% {
-    background-position: 0 100%;
-  }
+    transform: translateY(-72%);
+    -webkit-transform: translateY(-72%);
+    -moz-transform: translateY(-72%);
+    -ms-transform: translateY(-72%);
+    -o-transform: translateY(-72%);
+}
 }
 
 
@@ -202,11 +204,12 @@
 .more-game-download-wrap {
   display: none;
 }
-
-.more-game-download {
+#new-client-mask {
+  display: none;
+}
+.common-mask-content {
   width: 1200px;
   height: 477px;
-  background: url('./images/download-bg.png');
   position: absolute;
   top: 50%;
   margin-top: -238px;
@@ -215,6 +218,15 @@
   padding-right: 34px;
   z-index: 4;
 }
+.more-game-download {
+  background: url('./images/download-bg.png');
+}
+.download-new-con {
+  background: url('./images/more-client-bg.png');
+}
+
+
+
 .more-game-download-right {
   margin-left: 742px;
   padding-top: 145px;
