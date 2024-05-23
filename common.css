@@ -511,6 +511,9 @@ body::-webkit-scrollbar-track {
   text-align: center;
   margin-right:1%;
 }
+.footer-code-item img {
+  width: 138px;
+}
 
 /* 手机端底部结束 */
 
