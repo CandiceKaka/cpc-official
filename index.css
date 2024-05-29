@@ -4,8 +4,9 @@
 /* 第一屏banner开始 */
 .banner-wrap {
   height: 1000px;
-  background: url('./images/banner-bg1.png') ;
+  background: url('./images/banner-bg1.png') no-repeat;
   margin-top: 80px;
+  background-size: 100% 100%;
 }
 .banner-content {
   width: 1239px;
@@ -342,6 +343,7 @@
 .price-preview {
   height: 461px;
   background: url('./images/price-bg.png') no-repeat 100% 100%;
+  background-size: 100% 100%;
 }
 .price-preview-content {
   width: 1200px;
