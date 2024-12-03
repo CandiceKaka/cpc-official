@@ -143,6 +143,9 @@
   padding-top: 0.4rem;
   line-height: 0.39rem;
 }
+.download-new-mobile {
+  width: 100%;
+}
 /* 手机端第一屏banner结束 */
 
 
@@ -543,6 +546,16 @@
     width: .64rem;
     height: .64rem;
     margin: 0 auto;
+  }
+  .banner-mobile-new {
+    width: 2.8rem;
+    height: .36rem;
+    margin: 0 auto;
+    background-color: #373737;
+    color: #fff;
+    font-size: .14rem;
+    text-align: center;
+    line-height: .36rem;
   }
 }
 

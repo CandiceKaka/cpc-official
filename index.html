@@ -58,7 +58,7 @@
             <div><i class="iconfont icon-Frame61"></i>移动端</div>
           </div>
         </div>
-        <div class="download-new" onclick="downloadNew()">测试版（适用西北3区 华东1和22区）</div>
+        <div class="download-new" onclick="goPlayNow()">立即游玩（网页版）</div>
        </div>
         <div class="banner-right">
       </div>
@@ -85,6 +85,7 @@
           <div>移动端</div>
         </div>
       </div>
+      <div class="banner-mobile-new" onclick="goPlayNow()">立即游玩（网页版）</div>
     </div>
    </div>
    <!-- 手机端第一屏banner结束 -->
@@ -504,6 +505,11 @@
 
     function downloadNew () {
       document.getElementById('new-client-mask').style.display = 'block'
+    }
+
+    // 体验网页版
+    function goPlayNow () {
+      window.open("https://h5.icloud.cn/", "_blank") 
     }
   </script>
 
