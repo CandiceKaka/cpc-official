@@ -40,7 +40,7 @@
   margin-bottom: 16px;
 }
 .common-line2 {
-  margin-bottom: 28px;
+  margin-bottom: 18px;
 }
 .common-line2-price {
   width: 140px;
@@ -63,6 +63,12 @@
   color: #707070;
   font-size: 24px;
   font-family: 'PingFang SC-Bold';
+}
+.line-pc-i7-wrap {
+  margin-bottom: 10px;
+}
+.line-pc-i7-wrap img {
+  width: 469px;
 }
 .banner-line3 {
   color: #fff;
