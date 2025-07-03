@@ -382,6 +382,9 @@ body::-webkit-scrollbar-track {
 .footer-item-lineleft {
   margin-right: 48px;
 }
+.footer-item-lineleft1 {
+  margin-right: 42px;
+}
 .footer-logo {
   display: inline-block;
   font-size: 18px;
