@@ -6,6 +6,83 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "44797213",
+      "name": "Group 10549",
+      "font_class": "a-Group10549",
+      "unicode": "e6fd",
+      "unicode_decimal": 59133
+    },
+    {
+      "icon_id": "44797153",
+      "name": "网页",
+      "font_class": "a-Maskgroup22",
+      "unicode": "e6f8",
+      "unicode_decimal": 59128
+    },
+    {
+      "icon_id": "44797137",
+      "name": "Android",
+      "font_class": "a-Maskgroup2",
+      "unicode": "e6f6",
+      "unicode_decimal": 59126
+    },
+    {
+      "icon_id": "44797140",
+      "name": "网页",
+      "font_class": "a-Maskgroup-3",
+      "unicode": "e6f7",
+      "unicode_decimal": 59127
+    },
+    {
+      "icon_id": "44797141",
+      "name": "抢先版",
+      "font_class": "a-Maskgroup11",
+      "unicode": "e6f9",
+      "unicode_decimal": 59129
+    },
+    {
+      "icon_id": "44797139",
+      "name": "抢先",
+      "font_class": "a-Maskgroup-4",
+      "unicode": "e6fa",
+      "unicode_decimal": 59130
+    },
+    {
+      "icon_id": "44797138",
+      "name": "MAC",
+      "font_class": "a-Maskgroup-2",
+      "unicode": "e6fb",
+      "unicode_decimal": 59131
+    },
+    {
+      "icon_id": "44797136",
+      "name": "win",
+      "font_class": "a-Maskgroup-1",
+      "unicode": "e6fc",
+      "unicode_decimal": 59132
+    },
+    {
+      "icon_id": "41237670",
+      "name": "Group 1269",
+      "font_class": "a-Group1269",
+      "unicode": "e672",
+      "unicode_decimal": 58994
+    },
+    {
+      "icon_id": "41238178",
+      "name": "Group 1267-copy",
+      "font_class": "a-Group1267-copy",
+      "unicode": "e673",
+      "unicode_decimal": 58995
+    },
+    {
+      "icon_id": "41209267",
+      "name": "Vector",
+      "font_class": "Vector",
+      "unicode": "e670",
+      "unicode_decimal": 58992
+    },
+    {
       "icon_id": "40113852",
       "name": "Mask group",
       "font_class": "a-Maskgroup",
@@ -63,7 +140,7 @@
     },
     {
       "icon_id": "39986333",
-      "name": "Frame4",
+      "name": "MAC",
       "font_class": "Frame41",
       "unicode": "e664",
       "unicode_decimal": 58980
@@ -77,7 +154,7 @@
     },
     {
       "icon_id": "39986330",
-      "name": "Frame6",
+      "name": "Android",
       "font_class": "Frame61",
       "unicode": "e666",
       "unicode_decimal": 58982
@@ -105,7 +182,7 @@
     },
     {
       "icon_id": "39986325",
-      "name": "Vector",
+      "name": "win",
       "font_class": "Vector1",
       "unicode": "e66a",
       "unicode_decimal": 58986

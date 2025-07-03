@@ -1,8 +1,8 @@
 @font-face {
   font-family: "iconfont"; /* Project id 4023414 */
-  src: url('iconfont.woff2?t=1714036043289') format('woff2'),
-       url('iconfont.woff?t=1714036043289') format('woff'),
-       url('iconfont.ttf?t=1714036043289') format('truetype');
+  src: url('iconfont.woff2?t=1751512137283') format('woff2'),
+       url('iconfont.woff?t=1751512137283') format('woff'),
+       url('iconfont.ttf?t=1751512137283') format('truetype');
 }
 
 .iconfont {
@@ -11,6 +11,50 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-a-Group10549:before {
+  content: "\e6fd";
+}
+
+.icon-a-Maskgroup22:before {
+  content: "\e6f8";
+}
+
+.icon-a-Maskgroup2:before {
+  content: "\e6f6";
+}
+
+.icon-a-Maskgroup-3:before {
+  content: "\e6f7";
+}
+
+.icon-a-Maskgroup11:before {
+  content: "\e6f9";
+}
+
+.icon-a-Maskgroup-4:before {
+  content: "\e6fa";
+}
+
+.icon-a-Maskgroup-2:before {
+  content: "\e6fb";
+}
+
+.icon-a-Maskgroup-1:before {
+  content: "\e6fc";
+}
+
+.icon-a-Group1269:before {
+  content: "\e672";
+}
+
+.icon-a-Group1267-copy:before {
+  content: "\e673";
+}
+
+.icon-Vector:before {
+  content: "\e670";
 }
 
 .icon-a-Maskgroup:before {
